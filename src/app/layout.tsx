@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SaaS Biz",
-  description: "A safe foundation for your next SaaS product.",
+  title: "Haven — Your property portfolio, made simple",
+  description: "Understand the income, costs, mortgages and future value of your property portfolio.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
