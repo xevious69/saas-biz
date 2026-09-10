@@ -1,12 +1,12 @@
 export type Property = {
   id: string; name: string; location: string; type: "Apartment" | "Holiday home" | "Studio";
-  value: number; mortgageBalance: number; monthlyIncome: number; monthlyCosts: number; monthlyMortgage: number; occupancy: number;
+  purchasePrice: number; value: number; mortgageBalance: number; monthlyIncome: number; monthlyCosts: number; monthlyMortgage: number; occupancy: number; annualGrowthRate: number; purchasedOn: string;
 };
 
 export const portfolio: Property[] = [
-  { id: "lake", name: "Lakeview Apartment", location: "Zürich, Switzerland", type: "Apartment", value: 820000, mortgageBalance: 465000, monthlyIncome: 2450, monthlyCosts: 410, monthlyMortgage: 1040, occupancy: 100 },
-  { id: "alpine", name: "Alpine Retreat", location: "Laax, Switzerland", type: "Holiday home", value: 640000, mortgageBalance: 328000, monthlyIncome: 3100, monthlyCosts: 720, monthlyMortgage: 980, occupancy: 76 },
-  { id: "city", name: "City Studio", location: "Basel, Switzerland", type: "Studio", value: 390000, mortgageBalance: 214000, monthlyIncome: 1780, monthlyCosts: 290, monthlyMortgage: 1160, occupancy: 98 },
+  { id: "lake", name: "Lakeview Apartment", location: "Zürich, Switzerland", type: "Apartment", purchasePrice: 690000, value: 820000, mortgageBalance: 465000, monthlyIncome: 2450, monthlyCosts: 410, monthlyMortgage: 1040, occupancy: 100, annualGrowthRate: 3.2, purchasedOn: "2019-06-14" },
+  { id: "alpine", name: "Alpine Retreat", location: "Laax, Switzerland", type: "Holiday home", purchasePrice: 590000, value: 640000, mortgageBalance: 328000, monthlyIncome: 3100, monthlyCosts: 720, monthlyMortgage: 980, occupancy: 76, annualGrowthRate: 2.7, purchasedOn: "2021-11-02" },
+  { id: "city", name: "City Studio", location: "Basel, Switzerland", type: "Studio", purchasePrice: 365000, value: 390000, mortgageBalance: 214000, monthlyIncome: 1780, monthlyCosts: 290, monthlyMortgage: 1160, occupancy: 98, annualGrowthRate: 2.4, purchasedOn: "2023-02-18" },
 ];
 
 export function summarizePortfolio(properties: Property[]) {

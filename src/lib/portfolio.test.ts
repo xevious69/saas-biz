@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { projectPortfolioValue, summarizePortfolio, type Property } from "./portfolio";
 
-const property: Property = { id: "one", name: "Test", location: "Bern", type: "Apartment", value: 500000, mortgageBalance: 300000, monthlyIncome: 2500, monthlyCosts: 500, monthlyMortgage: 1000, occupancy: 100 };
+const property: Property = { id: "one", name: "Test", location: "Bern", type: "Apartment", purchasePrice: 450000, value: 500000, mortgageBalance: 300000, monthlyIncome: 2500, monthlyCosts: 500, monthlyMortgage: 1000, occupancy: 100, annualGrowthRate: 3, purchasedOn: "2020-01-01" };
 
 describe("portfolio calculations", () => {
   it("summarizes value, equity, cash flow and yield", () => {
