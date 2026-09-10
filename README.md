@@ -52,3 +52,6 @@ provider, not in GitHub source files or local templates.
 Before enabling automatic production deployment, configure GitHub's `production`
 environment with required reviewers and store production secrets only in the deployment
 platform or environment-scoped secret store.
+
+The provisioned environment mapping and operational boundaries are documented in
+[`docs/environments.md`](docs/environments.md).
